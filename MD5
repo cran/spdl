@@ -1,10 +1,10 @@
-1d13ae4ebf0ca17c20a6731f2a332163 *ChangeLog
-e62e4d4c9e97298114d1008040eb799a *DESCRIPTION
+eb0f7e02c2cb114b1044f1dbe4fc7736 *ChangeLog
+d79a21b1ddf0fdae1f8bc549544b9ff4 *DESCRIPTION
 bb9082f47abae5823fe937d5a71e929c *NAMESPACE
 1ce0fa8ecfaa7eb479386a63e096cef6 *R/init.R
-500225a3478b1da998c98a588df854ba *R/wrap.R
+212de02ec66c970a39c54c5136afc8a6 *R/wrap.R
 449bb41c6d9ac81847bf8aa6bbfa4a2a *README.md
-981421e102c626a6734ce0f3a529bbb9 *inst/NEWS.Rd
-52d6942ef39eb5b84c518a993b1b3903 *man/setup.Rd
+9a5ca46ab9215cfd6b1d81f915edf153 *inst/NEWS.Rd
+81523c3394988c5f76588f64a77102d2 *man/setup.Rd
 f14494e0920a481aab5cea7a4cd8f513 *tests/simpleTest.R
 ebbe8e016f997803c12c5e7c2bb35f8b *tests/simpleTest.Rout.save
