@@ -15,6 +15,7 @@
 ##' @param name Character value for the name of the logger instance
 ##' @param level Character value for the logging level
 ##' @param s Character value for filename, pattern, level, or logging message
+##' @param w Stopwatch object
 ##' @param ... Supplementary arguments for the logging string
 ##' @return Nothing is returned from these functions as they are invoked for their side-effects.
 ##' @examples
@@ -60,9 +61,15 @@ critical    <- function(s, ...)  RcppSpdlog::log_critical(fmt(s,...))
 fmt <- function(s, ...) {
     n <- ...length()
     v <- character(n)
-    for (i in seq_len(n)) v[i] <- format(...elt(i))
+    for (i in seq_len(n)) v[i] <- format(...elt(i)[1])
     RcppSpdlog::formatter(s, v)         # actual fmtlib::fmt formatting
 }
 
 ##' @rdname setup
 cat <- function(...) { base::cat(fmt(...), "\n") }
+
+##' @rdname setup
+stopwatch <- function() RcppSpdlog::get_stopwatch()
+
+##' @rdname setup
+elapsed <- function(w) RcppSpdlog::elapsed_stopwatch(w)
